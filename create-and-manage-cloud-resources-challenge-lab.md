@@ -20,12 +20,22 @@
     Use an f1-micro machine type.
     Use the default image type (Debian Linux).
 
+#### Solution
+
 ```shell
 gcloud compute instances create nucleus-jumphost \
     --machine-type=f1-micro
 ```
 
 ### Task 2: Create a Kubernetes service cluster
+
+    The team is building an application that will use a service running on Kubernetes. You need to:
+
+    Create a cluster (in the us-east1-b zone) to host the service.
+    Use the Docker container hello-app (gcr.io/google-samples/hello-app:2.0) as a place holder; the team will replace the container with their own work later.
+    Expose the app on port 8080.
+
+#### Solution
 
 ```shell
 
